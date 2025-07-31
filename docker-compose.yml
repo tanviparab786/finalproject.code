@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  java-app:
+    build: .
+    container_name: backendapplication
+    ports:
+      - "800:8080"
+    networks:
+      - testnetwork
+
+  postgres:
+    image: postgres:16
+    container_name: test
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: mydb
+    ports:
+      - "5432:5432"
+    networks:
+      - testnetwork
+
+networks:
+  testnetwork:
+    driver: bridge
