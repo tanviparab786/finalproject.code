@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: java-app
-          image: f1f8/finalproject:latest
+          image: tanvi2828/f1f8/finalproject:latest
           env:
             - name: SPRING_DATASOURCE_URL
               value: jdbc:postgresql://postgres-service:5432/finalprojectdb
