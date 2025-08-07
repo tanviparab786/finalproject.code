@@ -10,6 +10,6 @@ public class HelloController {
     public String hello() {
         //return "Hello from Spring Boot + PostgreSQL!"
         //return "Hello from Dhirajkumar Lulla + DB tech!";
-        return "hello docker";
+        return "docker user";
     }
 }
